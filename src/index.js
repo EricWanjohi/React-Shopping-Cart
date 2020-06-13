@@ -5,8 +5,10 @@ import cartReducer from './components/reducers/cartReducer'
 import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
+import './index.css'
+import '../node_modules/materialize-css/dist/css/materialize.min.css';
 
-// Create store object...
+// Create store object... Reducers specify how the application’s state changes in response to actions sent to the store.
 const store = createStore(cartReducer);
 
 ReactDOM.render(
